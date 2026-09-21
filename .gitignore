@@ -1,0 +1,12 @@
+# Purpose: Keep dependencies, local stores, caches and generated reports out of source control.
+node_modules/
+.local/
+local-data/
+*.sqlite*
+__pycache__/
+.venv/
+dist/
+*.egg-info/
+.jev-cache*
+*.html
+.DS_Store
