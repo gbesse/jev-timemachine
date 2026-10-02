@@ -37,6 +37,10 @@ Each corpus version hashes `{text, meta}`. Each stored judgment hashes the model
 
 The JSONL store is single-process and append-only, not a database. CSV parsing is intentionally basic. Reports are evidence aids, not causal estimates. Jev reads literally, is weak at dates/counts and can follow injected text; dates, slicing, hashes and arithmetic stay in code. No live benchmark was run.
 
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
+
 ## Validation
 
 `npm run check && npm run typecheck && npm test && npm run demo` runs in CI on Node 22 and 24. `npm run live-smoke` is opt-in and makes one synthetic paid request.

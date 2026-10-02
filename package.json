@@ -1,13 +1,34 @@
 {
   "name": "@gbesse/jev-timemachine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Replay versioned DecisionPacks over historical corpora, buying only uncached Jev judgments and reporting decision flips with paired statistics.",
   "type": "module",
-  "exports": { ".": { "types": "./src/index.d.mts", "import": "./src/index.mjs" } },
-  "bin": { "jev-timemachine": "./bin/jev-timemachine.mjs" },
-  "scripts": { "test": "node --test", "check": "node scripts/check.mjs", "demo": "node examples/demo.mjs", "typecheck": "tsc --noEmit --strict --target ES2022 --module NodeNext docs/public-api-types.mts", "live-smoke": "node scripts/live-smoke.mjs" },
-  "engines": { "node": ">=22" },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "bin": {
+    "jev-timemachine": "./bin/jev-timemachine.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check.mjs",
+    "demo": "node examples/demo.mjs",
+    "typecheck": "tsc --noEmit --strict --target ES2022 --module NodeNext docs/public-api-types.mts",
+    "live-smoke": "node scripts/live-smoke.mjs",
+    "demo:report": "node examples/demo-report.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/gbesse/jev-timemachine.git" },
-  "devDependencies": { "typescript": "5.9.3" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbesse/jev-timemachine.git"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
 }
